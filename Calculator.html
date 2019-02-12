@@ -4,9 +4,9 @@
 		 <title>Calculator</title>
 		 <meta charset="utf-8">
 		 <script type="text/javascript">
-			function cube(){ 
+			function cube(potencia){ 
 			var num = document.getElementById("n1");
-			num.value = Math.pow(num.value,3); }
+			num.value = Math.pow(num.value,potencia); }
 			function seno(){ 
 			var num = document.getElementById("n1");
 			num.value = Math.sin(num.value); }
@@ -16,7 +16,8 @@
 		 <h1>Calculadora de Susana Diez Rodríguez</h1>
 		 Number:  <input type="text" id="n1"> 
 		 <p>
-			<button onclick="cube()"> x^3 </button> &nbsp;
+			<button onclick="cube(3)"> x^3 </button> &nbsp;
+			<button onclick="cube(4)"> x^4 </button> &nbsp;
 			<button onclick="seno()"> sin(x) </button>
 		 </p>
 	</body>
