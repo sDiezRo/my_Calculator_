@@ -10,6 +10,9 @@
 			function seno(){ 
 			var num = document.getElementById("n1");
 			num.value = Math.sin(num.value); }
+			function inverso(){ 
+			var num = document.getElementById("n1");
+			num.value = 1/num.value,pot; }
 		 </script>
 	</head>
 	<body>
@@ -19,7 +22,8 @@
 			<button onclick="cube(3)"> x^3 </button> &nbsp;
 			<button onclick="cube(2)"> x^2 </button> &nbsp;
 			<button onclick="cube(4)"> x^4 </button> &nbsp;
-			<button onclick="seno()"> sin(x) </button>
+			<button onclick="seno()"> sin(x) </button>&nbsp;
+			<button onclick="inverso()"> 1/x </button> &nbsp;
 		 </p>
 	</body>
 </html>
